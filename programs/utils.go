@@ -39,4 +39,5 @@ var functions = map[string]func([]string) (string, error){
 	"count":        strings.Count,
 	"base64Encode": encoding.EncodeBase64,
 	"base64Decode": encoding.DecodeBase64,
+	"uuid4":        strings.GenerateUUID4,
 }
