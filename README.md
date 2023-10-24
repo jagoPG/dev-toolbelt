@@ -64,8 +64,10 @@ following commands:
 * Convert from RGB notation to hexadecimal
 * Encode to Base64
 * Decode from Base64
-
+* Generate UUID
+* Generate MD5 Hash
 
 ## 5. Author
 👨‍💻 Jagoba Pérez-Gómez
+
 📧 email: jagobapg@pm.me
