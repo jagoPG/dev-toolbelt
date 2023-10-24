@@ -62,6 +62,8 @@ following commands:
 * Count letters in the passed argument
 * Convert from hexadecimal notation to RGB
 * Convert from RGB notation to hexadecimal
+* Encode to Base64
+* Decode from Base64
 
 
 ## 5. Author

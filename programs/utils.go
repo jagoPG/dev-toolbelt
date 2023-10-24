@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"jagoPG/utils/colors"
+	"jagoPG/utils/encoding"
 	"jagoPG/utils/strings"
 	"os"
 )
@@ -33,7 +34,9 @@ func existsOperation(args []string) bool {
 }
 
 var functions = map[string]func([]string) (string, error){
-	"rgb2hex": colors.ConvertRGBToHex,
-	"hex2rgb": colors.ConvertHexToRGB,
-	"count":   strings.Count,
+	"rgb2hex":      colors.ConvertRGBToHex,
+	"hex2rgb":      colors.ConvertHexToRGB,
+	"count":        strings.Count,
+	"base64Encode": encoding.EncodeBase64,
+	"base64Decode": encoding.DecodeBase64,
 }
