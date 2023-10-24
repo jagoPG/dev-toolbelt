@@ -1,0 +1,18 @@
+# Python files
+*.pyc
+__pycache__
+
+# OS Files
+.DS_Store
+Desktop.ini
+.Trashes
+.Spotlight-V100
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+
+# Log files
+*.log
+*.log.gz
