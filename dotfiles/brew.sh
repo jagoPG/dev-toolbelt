@@ -5,52 +5,32 @@ set -e
 
 brew update && brew upgrade
 
-# General tools
-brew install coreutils \
-  findutils \
-  git \
-  git-lfs \
-  wget \
-  grep \
-  openssh \
-  lynx \
-  p7zip \
-  rename \
-  vbindiff \ # Show differences among files
-  zopfli \   # Compression lib
-  sqlite \
-  tree \
-  go
+################ HOMEBREW TOOLS ################
+brew install coreutils findutils git git-lfs wget grep openssh lynx p7zip rename vbindiff zopfli sqlite tree go
+git lfs install
 
 brew install gnu-sed --with-default-names
 brew install vim --with-override-system-vi
 
-# Casks
-brew install \
-  # Workflow
-  spectacle \
-  raycast \
-
-  # Internet
-  firefox \
-  chromium \
-  spotify \
-
-  # For Development
-  iterm2 \
-  slack \
-  visual-studio-code \
-  dbeaver-community \
-  macpass \
-  docker \
-  postman \
-  npm \
-  neovim \
-
-  # Multimedia
-  vlc
-
+# ZSH Tools
 brew install zsh-autosuggestions zsh-syntax-highlighting
+
+# Development
+brew docker docker-compose gh node yarn
+
+
+################ HOMEBREW CASKS ################
+# Workflow
+brew install --cask spectacle raycast
+
+# Internet
+brew install --cask firefox google-chrome spotify
+
+# Development
+brew install --cask iterm2 slack visual-studio-code dbeaver-community postman npm notion
+
+# Multimedia
+brew install --cask vlc
 
 brew cleanup
 
