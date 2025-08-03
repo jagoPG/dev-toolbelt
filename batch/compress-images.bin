@@ -1,0 +1,15 @@
+@echo off
+REM Batch convert all .CR2 files in the current directory to .JPG using ImageMagick
+
+REM Check for ImageMagick (magick.exe)
+where magick >nul 2>&1
+if errorlevel 1 (
+    echo "ImageMagick (magick.exe) is not installed or not in PATH"
+    pause
+    exit /b
+)
+
+for %%i in (*.CR2) do magick convert -quality 100 -define jpeg:sampling-factor=1x1 "%%i" "%%~ni.jpg"
+
+echo Conversion complete.
+pause
